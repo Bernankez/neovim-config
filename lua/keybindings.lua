@@ -63,3 +63,5 @@ map("n", "Q", ":qa!<CR>", opt)
 -- insert模式下，跳到行首行尾
 map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
+-- Ctrl+s保存文件
+map("n", "<C-s>", ":w<CR>", opt)
