@@ -1,4 +1,7 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.vim"
+-- 自动安装lazy.nvim
+-- 插件安装目录
+-- ~/.local/share/nvim/lazy/
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.notify("Installing lazy.nvim, please wait...")
   vim.fn.system({
@@ -20,4 +23,12 @@ if not status_ok then
   return
 end
 
-lazy.setup()
+local config = {
+  checker = {
+    -- automatically check for plugin updates
+    enabled = true
+  }
+}
+lazy.setup({
+  "folke/lazy.nvim",
+}, config)
