@@ -2,6 +2,12 @@
 
 ## Font
 
-[Patch SF Mono to Nerd](http://xfyuan.github.io/2020/07/patch-sf-mono-to-nerd-font/)
+[Maple nerd font](https://github.com/subframe7536/maple-font)
 
-[Nerd font test](https://www.nerdfonts.com/cheat-sheet)
+[How to patch SF Mono to nerd font](http://xfyuan.github.io/2020/07/patch-sf-mono-to-nerd-font/)
+
+[Test if your font is nerd font](https://www.nerdfonts.com/cheat-sheet)
+
+[Original SF Mono Regular](./fonts/SF-Mono-Regular.otf)
+
+[My patched SF Mono Regular](./fonts/SFMonoNerdFontMono-Regular.otf)

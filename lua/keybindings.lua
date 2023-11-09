@@ -54,3 +54,12 @@ map("n", "<C-k>", "4k", opt)
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
 
+-- 在visual模式里粘贴不要复制
+map("v", "p", '"_dp', opt)
+-- 退出
+map("n", "q", ":q<CR>", opt)
+map("n", "qq", ":q!<CR>", opt)
+map("n", "Q", ":qa!<CR>", opt)
+-- insert模式下，跳到行首行尾
+map("i", "<C-h>", "<ESC>I", opt)
+map("i", "<C-l>", "<ESC>A", opt)
