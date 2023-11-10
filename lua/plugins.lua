@@ -31,4 +31,36 @@ local config = {
 }
 lazy.setup({
   "folke/lazy.nvim",
+  ----------------- colorschemes -----------------
+  {
+    "mhartington/oceanic-next",
+  },
+  {
+    "Th3Whit3Wolf/onebuddy",
+    dependencies = {
+      "tjdevries/colorbuddy.vim"
+    }
+  },
+  {
+    "savq/melange-nvim"
+  },
+  {
+    "navarasu/onedark.nvim",
+    config = function()
+      require("onedark").setup({
+        style = "dark"
+      })
+    end
+  }
+  ------------------------------------------------
 }, config)
+
+pcall(
+  vim.cmd,
+  [[
+    augroup lazy_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | Lazy sync
+    augroup end
+  ]]
+)
