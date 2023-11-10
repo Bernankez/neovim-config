@@ -65,3 +65,7 @@ map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 -- Ctrl+s保存文件
 map("n", "<C-s>", ":w<CR>", opt)
+
+-- nvim-tree
+-- alt + m 打开关闭tree
+map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
